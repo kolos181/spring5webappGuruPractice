@@ -24,6 +24,8 @@ public class Author {
     @Setter
     private String lastName;
 
+    @Getter
+    @Setter
     @ManyToMany(mappedBy = "authors")
     private Set<Book> books = new HashSet<>();
 
